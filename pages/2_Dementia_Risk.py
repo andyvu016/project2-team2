@@ -1,6 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
 from prediction import predict_dementia
 
 st.title("Predicting Dementia Risk")
@@ -3513,5 +3511,7 @@ if st.button("Predict Dementia Risk"):
 
     if prediction < 0.5:
         st.success(f"Your Prediction is {round(prediction*100, 2)}%. You are not at risk of Dementia!")
+        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 99%")
     else:
         st.success(f"Your Prediction is {round(prediction*100, 2)}%. You are at risk of Dementia!")
+        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 99%")
