@@ -1,0 +1,8 @@
+streamlit
+pandas
+pathlib
+tensorflow
+scikit-learn
+pickle-mixin
+json
+joblib
