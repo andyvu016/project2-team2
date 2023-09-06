@@ -4,5 +4,4 @@ pathlib
 tensorflow
 scikit-learn
 pickle-mixin
-json
 joblib
