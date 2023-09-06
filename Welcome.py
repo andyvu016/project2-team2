@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Welcome and Disclaimer"
 )
 
-st.write("# Welcome")
+st.write("# CHECK FIRST ")
 
 st.sidebar.success("Select a Health Condition to Predict Above")
 
