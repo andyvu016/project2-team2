@@ -14,16 +14,16 @@ st.markdown(
     *Insert intro here*
 
     ### Collaborators
-    Emily Blackstein </br>
-    Harshita Panchal </br>
-    Andy Vu </br>
-    Amar Sen
+    **Emily Blackstein** \n
+    **Harshita Panchal** \n
+    **Andy Vu** \n
+    **Amar Sen**
 
     ### Resources
     - [2021 BRFSS Survey Data and Documentation](https://www.cdc.gov/brfss/annual_data/annual_2021.html)
     - [NHAMCS Datasets and Documentation](https://www.cdc.gov/nchs/ahcd/datasets_documentation_related.htm)
 
     ### Disclaimer
-    - For educational purposes...this is not medical diagnosis...seek profesional help.
+    For educational purposes...this is not medical diagnosis...seek profesional help.
 """
 )
