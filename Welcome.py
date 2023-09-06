@@ -23,7 +23,6 @@ st.markdown(
     - [2021 BRFSS Survey Data and Documentation](https://www.cdc.gov/brfss/annual_data/annual_2021.html)
     - [NHAMCS Datasets and Documentation](https://www.cdc.gov/nchs/ahcd/datasets_documentation_related.htm)
 
-    ### Disclaimer
-    - For educational purposes...this is not medical diagnosis...seek profesional help.
+    ### Medical Disclaimer !! For any symptoms seek professional help. This information is purely for educational purpose.
 """
 )
