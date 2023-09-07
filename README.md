@@ -65,7 +65,7 @@ Traveling out of the neighborhood.
 The Behavioral Risk Factor Surveillance System (BRFSS) is a health survey that collects data on behavioral risk factors. It is administered by the Centers for Disease Control and Prevention and conducted in all 50 states and US territories by participating individual state health departments. It gives communities, states, and federal agencies and information they need to plan public health programmes and other activities at local, state, and national levels.
 
 ## Preprocessing of BRFSS Dataset
-I preprocessed and cleaned the BRFSS Dataset. From 304 unique variables, I hand-picked 19 variables that relates to lifestyle factors of a person that can be contributed to being at risk with any form of COPD (Chronic Obstructive Pulmonary Disease). The data was from BRFSS dataset that was collected from CDC. Data preprocessing was done using pandas. We selected the relevant columns and dropped the rest to feature values to their labels. Remapping and reseting index leads to complete data cleaning. Most of the data cleaning was made sure that the values of the data are understandable. Then, we seperated the Label & features as required to train the model. Continued to split the datasets into training and testing sets so that we have data that the model has not seen  to evaluate its performance. Last step before training the model is to standardize the data for model to work efficiently.
+We preprocessed and cleaned the BRFSS Dataset. From 304 unique variables, We hand-picked 19 variables that relates to lifestyle factors of a person that can be contributed to being at risk with any form of COPD (Chronic Obstructive Pulmonary Disease). The data was from BRFSS dataset that was collected from CDC. Data preprocessing was done using pandas. We selected the relevant columns and dropped the rest to feature values to their labels. Remapping and reseting index leads to complete data cleaning. Most of the data cleaning was made sure that the values of the data are understandable. Then, we seperated the Label & features as required to train the model. Continued to split the datasets into training and testing sets so that we have data that the model has not seen  to evaluate its performance. Last step before training the model is to standardize the data for model to work efficiently.
 
 
 ## DESCRIBED EXPLORATION :
@@ -95,22 +95,28 @@ We used testing data that was separated using Train_Test_Split to make predictio
 # Model Summary :
 It was great learning to train each model. Each model gave minor differences but we are looking for higher recall. As we are not wanting to risk not capturing the set of people who might be at the risk of COPD (Chronic Obstructive Pulmonary Disease) with our model. We choose the 4th model and tried optimizing by dropping a number of features which improves the model but in minimal.
 
+## NHAMC Dataset (National Hospital Ambulatory Medical Care Survey)
+The National Hospital Ambulatory Medical Care Survey (NHAMCS) is a program conducted by the U.S. Centers for Disease Control and Prevention (CDC) to collect data on the use of hospital emergency and outpatient services in the United States. It provides valuable insights into healthcare utilization, patient demographics, and the reasons for medical visits, aiding in healthcare policy and planning.
+
+## Preprocessing of NHAMCS Dataset
+This dataset was the most difficult to process. The original dataset had 955 features, which we narrowed down to 32. Since there are over 3000 diagnosis in the data, after encoding we ended up with a features dataset with 3447 columns. We then continued by selecting the relevant columns for the target and features, split the data into training and testing sets, and standardized the data for training.
 
 
 Model 1
 ### 1st Model: Support Vector Machine algorithm, C-Support Vector Classification.
-- Support vector machines (SVMs) is a set of supervised learning methods used for classification, regression and outliers detection. SVM is a powerful supervised algorithm that works best on smaller datasets but on complex ones. Support Vector Machine can be used for both regression and classification tasks, but generally, they work best in classification problems and keep on being the go-to method for a high-performing algorithm with a little tuning.
-- 
+- As mentioned in the C.O.P.D. section.
+
 ### Model 2
 2nd ml model: k-nearest neighbors algorithm, k-nearest neighbors vote.
-- The KNN algorithm uses a majority voting mechanism. It collects data from a training data set, and uses this data later to make predictions for new records. K Nearest Neighbour is a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure.
+- As mentioned in the C.O.P.D. section.
 
 ### Model 3
 3rd model: ensemble-based methods for classification, Gradient Boosting Classifier.
-- The module sklearn.ensemble provides methods for both classification and regression via gradient boosted decision trees. This algorithm builds an addictive model in a forward stage-wise fashion; it allows for the optimization of arbitrary differentiable loss functions. K Nearest Neighbour is a simple algorithm that stores all the available cases and classifies the new data or case based on a similarity measure
+- As mentioned in the C.O.P.D. section.
 
 Model 4
-4th Model : Deep Learning , Neural Network
+4th Model: Deep Learning, Neural Network
+- In TensorFlow, a Sequential Neural Network model is a linear stack of layers where data flows sequentially from one layer to the next, making it easy to create feedforward neural networks for tasks like classification by simply adding layers in order. Each layer in a Sequential model can consist of various types of neurons, such as densely connected (fully connected) layers, dropout layers, etc., allowing for flexible model designs.
 
 
 # Discussion
