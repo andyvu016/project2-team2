@@ -3511,7 +3511,7 @@ if st.button("Predict Dementia Risk"):
 
     if prediction < 0.5:
         st.success(f"Your Prediction is {round(prediction*100, 2)}%. You are not at risk of Dementia!")
-        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 99%")
+        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 98%")
     else:
         st.success(f"Your Prediction is {round(prediction*100, 2)}%. You are at risk of Dementia!")
-        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 99%")
+        st.markdown("This was result was determined by a Deep Learning/Neural Network Model with an accuracy of 98%")

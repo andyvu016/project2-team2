@@ -12,7 +12,7 @@ def predict_dementia(data):
     on Dementia risk with the provided data.
     """
     # Load the model
-    model_file_path = Path("Resources/2017-2021 NHAMCS Data/nn_opt_model.h5")
+    model_file_path = Path("Resources/2017-2021 NHAMCS Data/nn_model.h5")
 
     # Load the model to a new object
     nn_imported = tf.keras.models.load_model(model_file_path)
