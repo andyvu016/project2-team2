@@ -2,6 +2,8 @@ import ast
 import streamlit as st
 from prediction import predict_dementia, predict_copd
 
+st.set_page_config(page_title="C.O.P.D. Risk Prediction", page_icon="😮‍💨")
+
 st.title("Predicting Chronic Obstructive Pulmonary Disease (C.O.P.D.) Risk")
 
 st.markdown("Machine learning model to predict C.O.P.D. Risk based on various health factors.")

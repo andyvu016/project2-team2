@@ -1,6 +1,8 @@
 import streamlit as st
 from prediction import predict_dementia
 
+st.set_page_config(page_title="Dementia Risk Prediction", page_icon="🧠")
+
 st.title("Predicting Dementia Risk")
 
 st.markdown("Deep learning model to predict Dementia Risk based on various health factors.")
