@@ -10,8 +10,13 @@ st.sidebar.success("Select a Health Condition to Predict Above")
 
 st.markdown(
     """
-    ### Introduction
-    *Insert intro here*
+    ### "CHECK FIRST"
+    "Check First" is an app created specifically to analyze health-related risk behaviors, chronic health conditions, 
+    and the use of preventive services connected to the risk for COPD(Chronic Obstructive Pulmonary Disease) and Dementia.
+
+    The focus of this project is to use Machine Learning and Deep Learning models to determine the risk of common health diseases.
+
+    More details can be found on the project's GitHub repository [here](https://github.com/andyvu016/project2-team2)
 
     ### Collaborators
     **Emily Blackstein** \n
