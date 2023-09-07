@@ -89,18 +89,11 @@ We preprocessed and cleaned the BRFSS Dataset. From 304 unique variables, We han
 - Naive Bayes is a probabilistic machine learning algorithm that can be used in several classification tasks. Typical applications of Naive Bayes are classification of documents, filtering spam, prediction and so on. Any modifications in the value of one feature do not directly impact the value of any other feature of the algorithm. The main advantage of the Naïve Bayes algorithm is that it is a simple yet powerful algorithm.
 - It took almost 10 mins for model to get trained.
 
-# Model Evaluation
-We used testing data that was separated using Train_Test_Split to make predictions. We then compared the predictions to their true-truths to calculate the accuracy, precision, and recall through the classification report. 
-
-# Model Summary :
-It was great learning to train each model. Each model gave minor differences but we are looking for higher recall. As we are not wanting to risk not capturing the set of people who might be at the risk of COPD (Chronic Obstructive Pulmonary Disease) with our model. We choose the 4th model and tried optimizing by dropping a number of features which improves the model but in minimal.
-
 ## NHAMC Dataset (National Hospital Ambulatory Medical Care Survey)
 The National Hospital Ambulatory Medical Care Survey (NHAMCS) is a program conducted by the U.S. Centers for Disease Control and Prevention (CDC) to collect data on the use of hospital emergency and outpatient services in the United States. It provides valuable insights into healthcare utilization, patient demographics, and the reasons for medical visits, aiding in healthcare policy and planning.
 
 ## Preprocessing of NHAMCS Dataset
 This dataset was the most difficult to process. The original dataset had 955 features, which we narrowed down to 32. Since there are over 3000 diagnosis in the data, after encoding we ended up with a features dataset with 3447 columns. We then continued by selecting the relevant columns for the target and features, split the data into training and testing sets, and standardized the data for training.
-
 
 Model 1
 ### 1st Model: Support Vector Machine algorithm, C-Support Vector Classification.
@@ -118,6 +111,13 @@ Model 4
 4th Model: Deep Learning, Neural Network
 - In TensorFlow, a Sequential Neural Network model is a linear stack of layers where data flows sequentially from one layer to the next, making it easy to create feedforward neural networks for tasks like classification by simply adding layers in order. Each layer in a Sequential model can consist of various types of neurons, such as densely connected (fully connected) layers, dropout layers, etc., allowing for flexible model designs.
 
+
+# Model Evaluation
+We used testing data that was separated using Train_Test_Split to make predictions. We then compared the predictions to their true-truths to calculate the accuracy, precision, and recall through the classification report. 
+
+
+# Model Summary:
+It was great learning to train each model. Each model gave minor differences but we are looking for higher recall. As we are not wanting to risk not capturing the set of people who might be at the risk of COPD (Chronic Obstructive Pulmonary Disease) with our model. For predicting COPD we choose the Guassian Naive Bayes model and tried optimizing by dropping a number of features which improves the model but in minimal. The final scores were Precision: 27%, Recall: 56% and Accuracy: 84%. For predicting Dementia we used the neural network model without dropout layers or regularizers. The final scores were Precision: 26%, Recall: 17% and Accuracy: 98%.
 
 # Discussion
 From all the Models mentioned for predicting COPD, Model 4 Naive Bayes algorithm, Gaussian Naive Bayes Classifier took just 10mins to get trained and also gave higher recall with 57%. Considering a medical point of view, higher recall is more important than precision. Higher recall ensures to capture everyone and not leave behind the ones who might have copd. It is better to count the ones even with minimum risk, even if the final test reports are negative/positive. It is better for a model to predict than not predicting. On the other hand, for predicting Dementia, the Neural Network model before optimizing performed the best. Although the Gradient Boosting model with resampled data had the highest recall, in practice it was too sensitive. Optimizing the neural network model by adding dropout layers and regulizers significantly increased the precision score, but also damaged the recall score severly, making it unusuable. 
