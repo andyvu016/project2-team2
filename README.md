@@ -89,6 +89,8 @@ We preprocessed and cleaned the BRFSS Dataset. From 304 unique variables, We han
 - Naive Bayes is a probabilistic machine learning algorithm that can be used in several classification tasks. Typical applications of Naive Bayes are classification of documents, filtering spam, prediction and so on. Any modifications in the value of one feature do not directly impact the value of any other feature of the algorithm. The main advantage of the Naïve Bayes algorithm is that it is a simple yet powerful algorithm.
 - It took almost 10 mins for model to get trained.
 
+![brfss_scores_plot](Images/brfss_scores_plot.png)
+
 ## NHAMC Dataset (National Hospital Ambulatory Medical Care Survey)
 The National Hospital Ambulatory Medical Care Survey (NHAMCS) is a program conducted by the U.S. Centers for Disease Control and Prevention (CDC) to collect data on the use of hospital emergency and outpatient services in the United States. It provides valuable insights into healthcare utilization, patient demographics, and the reasons for medical visits, aiding in healthcare policy and planning.
 
@@ -111,6 +113,7 @@ Model 4
 4th Model: Deep Learning, Neural Network
 - In TensorFlow, a Sequential Neural Network model is a linear stack of layers where data flows sequentially from one layer to the next, making it easy to create feedforward neural networks for tasks like classification by simply adding layers in order. Each layer in a Sequential model can consist of various types of neurons, such as densely connected (fully connected) layers, dropout layers, etc., allowing for flexible model designs.
 
+![nhamcs_scores_plot](Images/nhamcs_scores_plot.png)
 
 # Model Evaluation
 We used testing data that was separated using Train_Test_Split to make predictions. We then compared the predictions to their true-truths to calculate the accuracy, precision, and recall through the classification report. 
