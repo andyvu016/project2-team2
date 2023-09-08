@@ -109,7 +109,7 @@ Model 1
 3rd model: ensemble-based methods for classification, Gradient Boosting Classifier.
 - As mentioned in the C.O.P.D. section.
 
-Model 4
+### Model 4
 4th Model: Deep Learning, Neural Network
 - In TensorFlow, a Sequential Neural Network model is a linear stack of layers where data flows sequentially from one layer to the next, making it easy to create feedforward neural networks for tasks like classification by simply adding layers in order. Each layer in a Sequential model can consist of various types of neurons, such as densely connected (fully connected) layers, dropout layers, etc., allowing for flexible model designs.
 
